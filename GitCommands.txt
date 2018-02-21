@@ -21,7 +21,7 @@ git mv <from> <to>  // perform a rename
 
 
 git diff //differences between working tree and staging
-git diff [--staged] // diferences between staging and repos
+git diff [--staged] // diferences between staging and repos2
 
 
 
@@ -53,3 +53,4 @@ git reset HEAD <file> // unstage a file
 git checkout -- <file> // discard changes in working directory
 
 This is my new file
+This is my h file
