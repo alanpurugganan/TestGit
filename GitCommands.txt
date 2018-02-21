@@ -21,7 +21,7 @@ git mv <from> <to>  // perform a rename
 
 
 git diff //differences between working tree and staging
-git diff [--staged] // diferences between staging and repos
+git diff [--staged] // diferences between staging and repos3
 
 
 
@@ -52,4 +52,5 @@ git log --pretty=format:"%h - %an, %ar : %s"
 git reset HEAD <file> // unstage a file
 git checkout -- <file> // discard changes in working directory
 
+Checkit
 This is my new file
