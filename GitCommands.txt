@@ -21,8 +21,7 @@ git mv <from> <to>  // perform a rename
 
 
 git diff //differences between working tree and staging
-git diff [--staged] // diferences between staging and repos34
-
+git diff [--staged] // diferences between staging and repos36
 
 
 git commit //commit everything in staged area
