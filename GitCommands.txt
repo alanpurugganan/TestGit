@@ -1,0 +1,55 @@
+Git Commands
+
+Start a repository
+git init
+
+git status [-s]
+git status --ignored // shows what files will be ignored
+
+git add <file> // stage file or new file
+
+git add . // stage new and modified, no deleted
+git add -u // stage modified and deleted, no new files
+git add -A // stage everything (combo of . and -u)
+
+git rm <file> // removed file from being tracked and remove from both staging and working tree
+git rm --cached <file> // removed file from being tracked and remove from only staging.  Leaves working tree copy
+git rm -f <file> // required to force removal of a staged modified file
+
+
+git mv <from> <to>  // perform a rename
+
+
+git diff //differences between working tree and staging
+git diff [--staged] // diferences between staging and repos
+
+
+
+git commit //commit everything in staged area
+git commit -a // stage all tracked modifications and commit
+git commit -amend // update a previous commit with new staged stuff
+
+
+git log --oneline
+git log -p -2 // show last two entries with patches
+git log -stat // abbreviated stats
+git log --pretty=[oneline|short|full|fuller]
+
+git log --since=15.minutes
+git log --until=2.days
+git log --pretty=format:"%h - %an, %ar : %s"
+
+%H Commit hash
+%h Abbreviated commit hash
+%an Author name
+%ae Author email
+%cn Committer name
+%ce Committer email
+%cd Committer date
+%s Subject
+
+//HOW TO UNDO
+git reset HEAD <file> // unstage a file
+git checkout -- <file> // discard changes in working directory
+
+This is my new file
